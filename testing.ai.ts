@@ -1,4 +1,4 @@
-export const testingScript=`
+
 let turn = -1; // current turn mostly for turn 1
 let board = []; // its the whole board with states
 let curMoves = [];  // wild hold our positions
@@ -227,5 +227,3 @@ function recurseMoves(gameState, visited, row, col) {
     return eastCost;
   }
 }
-
-`;
