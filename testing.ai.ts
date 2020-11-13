@@ -53,8 +53,8 @@ function main(gameState, side){
     //send console notes for how the board and locations look for monsters.
     var moves = ['none', 'none', 'none'];
 
-    moves = makeMoves(gameState, myTeam, otherTeam);
-    //moves = solvePaths(gameState, myTeam);
+    //moves = makeMoves(gameState, myTeam, otherTeam);
+    moves = solvePaths(gameState, myTeam);
 	  return moves;
 }
 
