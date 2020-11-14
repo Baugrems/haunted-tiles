@@ -116,9 +116,9 @@ function solvePaths(gameState, myTeam) {
     if (myTeam[i].isDead ) {
       continue;
     }
-    // if (gameState.tileStates[row][col] > 1) {
-    //   continue;
-    // }
+     if (gameState.tileStates[row][col] > 1) {
+       continue;
+     }
     let canNorth = (row > 0) && (gameState.tileStates[row - 1][col] > 1);
     let canSouth = (row < rowSize - 1) && (gameState.tileStates[row + 1][col] > 1);
     let canWest = (col > 0) && (gameState.tileStates[row][col - 1] > 1);
